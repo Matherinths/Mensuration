@@ -1,0 +1,20 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Static",
+      "type": "shell",
+      "command": "browser-sync start --server --directory --files \"**/*\"",
+      "options": { "cwd": "${workspaceFolder}" },
+      "isBackground": false,
+      "group": { "kind": "build", "isDefault": true },
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": true,
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    }
+  ]
+}
